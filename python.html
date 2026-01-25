@@ -1,0 +1,3117 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Complete Python tutorial from beginner to advanced - learn Python programming with practical examples, clear explanations, and real-world projects.">
+    <title>Complete Python Tutorial - Beginner to Advanced | TechTrenches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+    
+
+
+
+    <nav class="navbar">
+
+        <ul class="nav-link">
+
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="programming.html"> programming languages </a></li>
+            <li> <a href="about.html"> about </a></li>
+            <li> <a href="contact.html"> contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+
+
+
+
+
+        </ul>
+
+
+
+    </nav>
+
+
+    
+    
+    
+        
+
+    
+    
+    
+        <div class="container">
+            <header>
+                <h1><span class="python-icon">🐍</span> Complete Python Tutorial: Beginner to Advanced</h1>
+                <p class="subtitle">Master Python programming from scratch with practical examples and real-world
+                    applications</p>
+            </header>
+    
+            <article>
+                <span class="section-label">BEGINNER</span>
+                <h2>What Is Python and How It Works</h2>
+    
+                <p>Python is a programming language that reads almost like English, making it the perfect first language for
+                    anyone learning to code. Created by Guido van Rossum in 1991, Python was designed with one core
+                    philosophy: simplicity. While other languages might require you to memorize complex symbols and cryptic
+                    syntax, Python lets you focus on solving problems rather than fighting with the language itself.</p>
+    
+                <p>Think of programming languages as different ways to give instructions to a computer. Some languages are
+                    like speaking in formal legal jargon precise but difficult. Python is like having a conversation with a
+                    smart assistant who understands what you mean even when you use everyday language.</p>
+    
+                <h3>Why Learn Python in 2026?</h3>
+    
+                <p>Python has become the world's most popular programming language, and for good reasons that matter to you
+                    as a learner:</p>
+    
+                <ul>
+                    <li><strong>Beginner-Friendly</strong> - You can write working programs on your first day. No other
+                        major language makes this as easy.</li>
+                    <li><strong>Versatile</strong> - Build websites, analyze data, create games, automate tasks, or develop
+                        AI applications—all with one language.</li>
+                    <li><strong>In-Demand</strong> - Companies from startups to Google use Python. It's consistently among
+                        the highest paying programming skills.</li>
+                    <li><strong>Massive Community</strong> - Millions of Python developers means you'll find help,
+                        libraries, and tutorials for virtually anything.</li>
+                    <li><strong>Free and Open Source</strong> - You'll never pay for Python or its ecosystem of tools.</li>
+                </ul>
+    
+                <h3>How Python Actually Works</h3>
+    
+                <p>When you write Python code, you're creating a text file with instructions. But computers don't understand
+                    English like commands they only understand machine code (ones and zeros). Python acts as a translator
+                    between your readable code and the computer's language.</p>
+    
+                <p>Here's what happens when you run a Python program:</p>
+    
+                <ol>
+                    <li><strong>You write code</strong> in a <code>.py</code> file using plain text</li>
+                    <li><strong>Python interpreter reads</strong> your code line by line</li>
+                    <li><strong>The interpreter translates</strong> each instruction into machine code</li>
+                    <li><strong>Your computer executes</strong> the machine code</li>
+                    <li><strong>Results appear</strong> on your screen</li>
+                </ol>
+    
+                <p>This interpretation happens instantly you won't notice any delay. The key insight is that Python is an
+                    <strong>interpreted language</strong>, meaning it translates and runs your code on the fly, rather than
+                    requiring a separate "compilation" step like languages such as C++ or Java.</p>
+    
+                <h3>Python 2 vs Python 3: Which Should You Learn?</h3>
+    
+                <p>You might see references to Python 2 and Python 3. Here's what you need to know: <strong>Learn Python
+                        3</strong>. Period.</p>
+    
+                <p>Python 2 was officially discontinued on January 1, 2020. While some legacy systems still use it, all new
+                    development happens in Python 3. This tutorial teaches Python 3, which is the only version that matters
+                    for anyone starting today.</p>
+    
+                <div class="tip-box">
+                    <strong>Key Difference:</strong> The most visible difference is that Python 2 uses
+                    <code>print "Hello"</code> while Python 3 uses <code>print("Hello")</code>. If you see code without
+                    parentheses in print statements, it's outdated Python 2 code.
+                </div>
+    
+                <h3>What Can You Build with Python?</h3>
+    
+                <p>Let's ground this in reality. Here's what Python actually powers:</p>
+    
+                <ul>
+                    <li><strong>Web Applications</strong> - Instagram, Spotify, Netflix, and YouTube all run on Python
+                        backends</li>
+                    <li><strong>Data Analysis</strong> - Scientists and analysts use Python to process everything from
+                        climate data to stock markets</li>
+                    <li><strong>Artificial Intelligence</strong> - Most machine learning and AI tools are built with Python
+                        (TensorFlow, PyTorch, etc.)</li>
+                    <li><strong>Automation Scripts</strong> - Automate boring tasks like renaming files, scraping websites,
+                        or sending emails</li>
+                    <li><strong>Games</strong> - While not ideal for AAA games, Python powers many indie games and game
+                        development tools</li>
+                    <li><strong>Scientific Computing</strong> - NASA uses Python for calculations and data processing</li>
+                    <li><strong>Desktop Applications</strong> - Dropbox's desktop client is written in Python</li>
+                </ul>
+    
+                <h2>Installing Python and Setting Up the Environment</h2>
+    
+                <p>Before you can write Python code, you need to install Python on your computer. Don't worry this process
+                    is straightforward and takes about 5 minutes.</p>
+    
+                <h3>Installing Python on Windows</h3>
+    
+                <ol>
+                    <li>Go to <strong>python.org</strong> (the official Python website)</li>
+                    <li>Click the <strong>Downloads</strong> tab</li>
+                    <li>Click the big yellow button that says <strong>Download Python 3.x.x</strong> (the numbers will be
+                        the latest version)</li>
+                    <li>Run the downloaded installer</li>
+                    <li><strong>CRITICAL:</strong> Check the box that says "Add Python to PATH" at the bottom of the
+                        installer</li>
+                    <li>Click "Install Now"</li>
+                    <li>Wait for installation to complete</li>
+                </ol>
+    
+                <div class="warning-box">
+                    <strong>Common Mistake:</strong> Forgetting to check "Add Python to PATH" is the #1 beginner error.
+                    Without this, Windows won't recognize Python commands. If you forgot, uninstall and reinstall Python
+                    with this option checked.
+                </div>
+    
+                <h3>Installing Python on Mac</h3>
+    
+                <p>Macs come with Python 2.7 pre-installed, but remember we want Python 3:</p>
+    
+                <ol>
+                    <li>Go to <strong>python.org/downloads</strong></li>
+                    <li>Download the latest Python 3 installer for macOS</li>
+                    <li>Open the downloaded <code>.pkg</code> file</li>
+                    <li>Follow the installation wizard</li>
+                    <li>When complete, Python 3 will be installed alongside the old Python 2</li>
+                </ol>
+    
+                <h3>Installing Python on Linux</h3>
+    
+                <p>Most Linux distributions include Python 3. Check by opening a terminal and typing:</p>
+    
+                <pre><code>python3 --version</code></pre>
+    
+                <p>If Python 3 isn't installed, use your package manager:</p>
+    
+                <pre><code># Ubuntu/Debian
+    sudo apt update
+    sudo apt install python3
+    
+    # Fedora
+    sudo dnf install python3
+    
+    # Arch Linux
+    sudo pacman -S python</code></pre>
+    
+                <h3>Verifying Your Installation</h3>
+    
+                <p>After installation, verify Python works:</p>
+    
+                <ol>
+                    <li>Open your terminal/command prompt</li>
+                    <li>Type <code>python --version</code> (or <code>python3 --version</code> on Mac/Linux)</li>
+                    <li>You should see something like <code>Python 3.11.4</code></li>
+                </ol>
+    
+                <p>If you see a version number starting with 3, congratulations Python is installed!</p>
+    
+                <h3>Choosing a Code Editor</h3>
+    
+                <p>You can write Python in any text editor, but using an editor designed for code makes life much easier.
+                    Here are the best options for beginners:</p>
+    
+                <p><strong>Visual Studio Code (Recommended for Beginners)</strong></p>
+                <ul>
+                    <li>Free, modern, and powerful</li>
+                    <li>Download from code.visualstudio.com</li>
+                    <li>Install the Python extension for syntax highlighting and debugging</li>
+                    <li>Works on Windows, Mac, and Linux</li>
+                </ul>
+    
+                <p><strong>PyCharm Community Edition</strong></p>
+                <ul>
+                    <li>Built specifically for Python</li>
+                    <li>Excellent for larger projects</li>
+                    <li>Can feel heavy for beginners</li>
+                    <li>Download from jetbrains.com/pycharm</li>
+                </ul>
+    
+                <p><strong>IDLE (Comes with Python)</strong></p>
+                <ul>
+                    <li>Already installed when you installed Python</li>
+                    <li>Basic but functional</li>
+                    <li>Great for quick tests and learning</li>
+                    <li>Find it in your programs menu as "IDLE"</li>
+                </ul>
+    
+                <div class="tip-box">
+                    <strong>My Recommendation:</strong> Start with VS Code. It's beginner friendly but powerful enough that
+                    you won't outgrow it. Plus, if you learn other languages later, VS Code supports them all.
+                </div>
+    
+                <h3>Your First Python Program</h3>
+    
+                <p>Let's write your first program to confirm everything works:</p>
+    
+                <ol>
+                    <li>Open your chosen editor</li>
+                    <li>Create a new file called <code>hello.py</code></li>
+                    <li>Type this exact code:</li>
+                </ol>
+    
+                <pre><code>print("Hello, Python!")</code></pre>
+    
+                <ol start="4">
+                    <li>Save the file</li>
+                    <li>Open your terminal/command prompt</li>
+                    <li>Navigate to where you saved the file</li>
+                    <li>Run: <code>python hello.py</code></li>
+                </ol>
+    
+                <div class="output-box">
+                    Output: Hello, Python!
+                </div>
+    
+                <p>If you see "Hello, Python!" appear, you've successfully written and executed your first Python program.
+                    Welcome to programming!</p>
+    
+                <h2>Python Syntax and Indentation</h2>
+    
+                <p>Python's syntax the rules for writing code is famous for being clean and readable. However, Python has
+                    one unique characteristic that trips up many beginners: <strong>indentation matters</strong>.</p>
+    
+                <p>In most programming languages, curly braces <code>{}</code> define code blocks. Python uses indentation
+                    (spaces or tabs) instead. This forces you to write visually organized code, which makes Python programs
+                    easier to read than most other languages.</p>
+    
+                <h3>Understanding Indentation</h3>
+    
+                <p>In Python, indentation isn't just for looks—it defines the structure of your code. Consider this example:
+                </p>
+    
+                <pre><code>if True:
+        print("This is indented")
+        print("So is this")
+    print("This is not indented")</code></pre>
+    
+                <p>The first two <code>print</code> statements are indented, so they belong to the <code>if</code> block.
+                    The third <code>print</code> isn't indented, so it's outside the <code>if</code> block and runs
+                    regardless of the condition.</p>
+    
+                <h3>How Much Indentation?</h3>
+    
+                <p>The Python community standard is <strong>4 spaces</strong> per indentation level. Your editor should
+                    automatically convert Tab key presses to 4 spaces.</p>
+    
+                <pre><code># Good - 4 spaces
+    if True:
+        print("Correct indentation")
+    
+    # Bad - inconsistent spacing
+    if True:
+      print("2 spaces")
+          print("6 spaces - ERROR!")</code></pre>
+    
+                <div class="warning-box">
+                    <strong>Common Error: IndentationError</strong><br>
+                    If you mix tabs and spaces, or use inconsistent spacing, Python will throw an
+                    <code>IndentationError</code>. Pick one method (4 spaces recommended) and stick with it throughout your
+                    entire file.
+                </div>
+    
+                <h3>Statements and Comments</h3>
+    
+                <p>A statement is a single instruction in Python. Most statements fit on one line:</p>
+    
+                <pre><code>name = "Alice"
+    age = 30
+    print(name)</code></pre>
+    
+                <p>Comments are notes you write for yourself (or other programmers). Python ignores everything after a
+                    <code>#</code> symbol:</p>
+    
+                <pre><code># This is a comment - Python ignores this
+    name = "Alice"  # You can also comment after code
+    
+    # Use comments to explain WHY, not WHAT
+    # Bad comment:
+    x = x + 1  # Add 1 to x (obvious from code)
+    
+    # Good comment:
+    x = x + 1  # Account for zero-indexed array</code></pre>
+    
+                <h3>Multi-Line Statements</h3>
+    
+                <p>Sometimes a statement is too long for one line. You can split it using backslash <code>\</code> or
+                    implied line continuation inside parentheses:</p>
+    
+                <pre><code># Using backslash
+    total = 1 + 2 + 3 + \
+            4 + 5 + 6
+    
+    # Better: implied continuation (no backslash needed)
+    total = (1 + 2 + 3 +
+             4 + 5 + 6)
+    
+    # Also works for function calls
+    print("This is a very long string that "
+          "spans multiple lines")</code></pre>
+    
+                <h3>Python Naming Conventions</h3>
+    
+                <p>While Python doesn't enforce naming styles, following conventions makes your code more readable:</p>
+    
+                <pre><code># Variables and functions: lowercase with underscores
+    user_name = "Alice"
+    def calculate_total():
+        pass
+    
+    # Constants: UPPERCASE with underscores
+    MAX_SIZE = 100
+    PI = 3.14159
+    
+    # Classes: CapitalizedWords (we'll cover classes later)
+    class UserAccount:
+        pass</code></pre>
+    
+                <h2>Python Variables and Data Types</h2>
+    
+                <p>Variables are containers that store data. Think of them as labeled boxes where you put information that
+                    you want to use later in your program.</p>
+    
+                <h3>Creating Variables</h3>
+    
+                <p>In Python, creating a variable is incredibly simple—just assign a value to a name:</p>
+    
+                <pre><code>message = "Hello, World!"
+    age = 25
+    price = 19.99
+    is_valid = True</code></pre>
+    
+                <p>Notice you don't need to declare the type (like "this is a number" or "this is text"). Python figures it
+                    out automatically from the value you assign. This is called <strong>dynamic typing</strong>.</p>
+    
+                <h3>Variable Naming Rules</h3>
+    
+                <p>Variables can be named almost anything, but must follow these rules:</p>
+    
+                <ul>
+                    <li>Must start with a letter or underscore (a-z, A-Z, _)</li>
+                    <li>Can contain letters, numbers, and underscores</li>
+                    <li>Cannot start with a number</li>
+                    <li>Cannot use Python keywords (like <code>if</code>, <code>for</code>, <code>while</code>)</li>
+                    <li>Are case-sensitive (<code>age</code> and <code>Age</code> are different)</li>
+                </ul>
+    
+                <pre><code># Valid variable names
+    name = "Alice"
+    age_2 = 30
+    _private = "hidden"
+    firstName = "John"
+    
+    # Invalid variable names
+    2name = "Alice"      # Can't start with number
+    my-name = "Alice"    # Hyphens not allowed
+    for = "loop"         # 'for' is a keyword</code></pre>
+    
+                <h3>Understanding Data Types</h3>
+    
+                <p>Python has several built in data types. Here are the fundamental ones:</p>
+    
+                <pre><code># Integer (whole numbers)
+    age = 25
+    year = 2024
+    negative = -10
+    
+    # Float (decimal numbers)
+    price = 19.99
+    temperature = -5.5
+    pi = 3.14159
+    
+    # String (text)
+    name = "Alice"
+    message = 'Hello, World!'
+    multiline = """This is
+    a multi-line
+    string"""
+    
+    # Boolean (True or False)
+    is_active = True
+    has_permission = False
+    
+    # NoneType (represents "nothing" or "no value")
+    result = None</code></pre>
+    
+                <h3>Checking Types</h3>
+    
+                <p>Use the <code>type()</code> function to check what type a variable is:</p>
+    
+                <pre><code>age = 25
+    print(type(age))  # <class 'int'>
+    
+    price = 19.99
+    print(type(price))  # <class 'float'>
+    
+    name = "Alice"
+    print(type(name))  # <class 'str'>
+    
+    is_valid = True
+    print(type(is_valid))  # <class 'bool'></code></pre>
+    
+                <h3>Type Conversion</h3>
+    
+                <p>You can convert between types explicitly:</p>
+    
+                <pre><code># String to integer
+    age_str = "25"
+    age_int = int(age_str)
+    print(age_int + 5)  # 30
+    
+    # Integer to string
+    number = 42
+    text = str(number)
+    print("The answer is " + text)
+    
+    # String to float
+    price_str = "19.99"
+    price_float = float(price_str)
+    
+    # Be careful - this causes an error:
+    bad_conversion = int("Hello")  # ValueError!</code></pre>
+    
+                <div class="warning-box">
+                    <strong>Common Mistake:</strong> Trying to convert non-numeric strings to numbers causes a
+                    <code>ValueError</code>. Always validate data before converting, especially when dealing with user
+                    input.
+                </div>
+    
+                <h2>Numbers, Strings, and Booleans</h2>
+    
+                <p>Let's dive deeper into Python's three most commonly used data types.</p>
+    
+                <h3>Working with Numbers</h3>
+    
+                <p>Python handles both integers (whole numbers) and floats (decimals):</p>
+    
+                <pre><code># Basic arithmetic
+    addition = 10 + 5        # 15
+    subtraction = 10 - 5     # 5
+    multiplication = 10 * 5  # 50
+    division = 10 / 3        # 3.3333...
+    
+    # Integer division (rounds down)
+    floor_division = 10 // 3  # 3
+    
+    # Modulo (remainder)
+    remainder = 10 % 3       # 1
+    
+    # Exponentiation
+    power = 2 ** 3           # 8 (2 cubed)
+    
+    # Order of operations (PEMDAS applies)
+    result = 2 + 3 * 4       # 14 (not 20!)
+    result = (2 + 3) * 4     # 20 (parentheses first)</code></pre>
+    
+                <p>Python has no limit on integer size you can work with numbers as large as your computer's memory allows:
+                </p>
+    
+                <pre><code>huge_number = 123456789012345678901234567890
+    print(huge_number * 2)  # Works fine!</code></pre>
+    
+                <h3>String Manipulation</h3>
+    
+                <p>Strings are sequences of characters. Python provides powerful string operations:</p>
+    
+                <pre><code># Creating strings
+    single_quotes = 'Hello'
+    double_quotes = "World"
+    both_work = 'Both "quotes" work!'
+    
+    # String concatenation
+    first_name = "Alice"
+    last_name = "Smith"
+    full_name = first_name + " " + last_name  # "Alice Smith"
+    
+    # String repetition
+    laugh = "Ha" * 3  # "HaHaHa"
+    
+    # String length
+    message = "Hello"
+    length = len(message)  # 5
+    
+    # Accessing characters (zero-indexed!)
+    first_char = message[0]   # "H"
+    last_char = message[-1]   # "o"
+    
+    # String slicing
+    substring = message[1:4]  # "ell" (from index 1 to 4, exclusive)</code></pre>
+    
+                <h3>String Methods</h3>
+    
+                <p>Strings have built-in methods for common operations:</p>
+    
+                <pre><code>text = "Hello, World!"
+    
+    # Case changes
+    print(text.upper())      # "HELLO, WORLD!"
+    print(text.lower())      # "hello, world!"
+    print(text.title())      # "Hello, World!"
+    
+    # Searching
+    print(text.find("World"))     # 7 (index where "World" starts)
+    print(text.count("l"))        # 3 (number of "l"s)
+    print("World" in text)        # True
+    
+    # Replacing
+    new_text = text.replace("World", "Python")  # "Hello, Python!"
+    
+    # Trimming whitespace
+    messy = "  spaces  "
+    clean = messy.strip()    # "spaces"
+    
+    # Splitting into list
+    words = text.split(", ") # ["Hello", "World!"]</code></pre>
+    
+                <h3>F-Strings: Modern String Formatting</h3>
+    
+                <p>F-strings (formatted string literals) are the best way to insert variables into strings:</p>
+    
+                <pre><code>name = "Alice"
+    age = 30
+    city = "New York"
+    
+    # Old way (avoid)
+    message = "My name is " + name + " and I am " + str(age) + " years old."
+    
+    # F-string way (recommended)
+    message = f"My name is {name} and I am {age} years old."
+    
+    # Can include expressions
+    message = f"Next year I'll be {age + 1}."
+    
+    # Formatting numbers
+    price = 19.99
+    print(f"Price: ${price:.2f}")  # "Price: $19.99" (2 decimal places)</code></pre>
+    
+                <h3>Boolean Logic</h3>
+    
+                <p>Booleans represent True or False. They're essential for decision-making in code:</p>
+    
+                <pre><code># Creating booleans
+    is_logged_in = True
+    has_permission = False
+    
+    # Comparison operations return booleans
+    print(5 > 3)        # True
+    print(10 == 10)     # True
+    print("a" == "A")   # False (case-sensitive)
+    
+    # Logical operators
+    age = 25
+    has_license = True
+    
+    can_drive = age >= 18 and has_license  # Both must be True
+    can_enter = age >= 18 or has_license   # At least one must be True
+    is_minor = not (age >= 18)              # Inverts the boolean
+    
+    # Truthiness: non-boolean values in boolean context
+    if "Hello":        # Non-empty strings are truthy
+        print("This runs")
+    
+    if 0:              # Zero is falsy
+        print("This doesn't run")</code></pre>
+    
+                <div class="info-box">
+                    <strong>Falsy Values in Python:</strong> These evaluate to False in boolean context: <code>False</code>,
+                    <code>None</code>, <code>0</code>, <code>0.0</code>, <code>''</code> (empty string), <code>[]</code>
+                    (empty list), <code>{}</code> (empty dict). Everything else is truthy.
+                </div>
+    
+                <h2>Python Operators</h2>
+    
+                <p>Operators are symbols that perform operations on values. We've seen some already, but let's cover them
+                    systematically.</p>
+    
+                <h3>Arithmetic Operators</h3>
+    
+                <pre><code># Basic math
+    x = 10
+    y = 3
+    
+    print(x + y)   # Addition: 13
+    print(x - y)   # Subtraction: 7
+    print(x * y)   # Multiplication: 30
+    print(x / y)   # Division: 3.333...
+    print(x // y)  # Floor division: 3
+    print(x % y)   # Modulo (remainder): 1
+    print(x ** y)  # Exponentiation: 1000 (10³)
+    
+    # Compound assignment
+    count = 0
+    count += 1    # Same as: count = count + 1
+    count -= 1    # Same as: count = count - 1
+    count *= 2    # Same as: count = count * 2
+    count /= 2    # Same as: count = count / 2</code></pre>
+    
+                <h3>Comparison Operators</h3>
+    
+                <pre><code>a = 10
+    b = 5
+    
+    print(a == b)   # Equal: False
+    print(a != b)   # Not equal: True
+    print(a > b)    # Greater than: True
+    print(a < b)    # Less than: False
+    print(a >= b)   # Greater or equal: True
+    print(a <= b)   # Less or equal: False
+    
+    # String comparisons
+    print("apple" < "banana")  # True (alphabetical order)
+    print("10" == 10)          # False (different types!)</code></pre>
+    
+                <h3>Logical Operators</h3>
+    
+                <pre><code># and - both conditions must be True
+    age = 25
+    income = 50000
+    approved = age >= 18 and income >= 30000  # True
+    
+    # or - at least one condition must be True
+    is_weekend = True
+    is_holiday = False
+    can_sleep_in = is_weekend or is_holiday  # True
+    
+    # not - inverts the boolean
+    is_raining = False
+    is_sunny = not is_raining  # True</code></pre>
+    
+                <h3>Identity and Membership Operators</h3>
+    
+                <pre><code># is - checks if two variables point to the same object
+    a = [1, 2, 3]
+    b = a
+    c = [1, 2, 3]
+    
+    print(a is b)      # True (same object)
+    print(a is c)      # False (different objects, same values)
+    print(a == c)      # True (same values)
+    
+    # in - checks if value exists in sequence
+    fruits = ["apple", "banana", "cherry"]
+    print("apple" in fruits)       # True
+    print("grape" in fruits)       # False
+    print("a" in "apple")          # True (works with strings too!)</code></pre>
+    
+                <h2>Input and Output</h2>
+    
+                <p>Programs need to interact with users. Input lets users provide data, while output displays results.</p>
+    
+                <h3>The print() Function</h3>
+    
+                <p>We've used <code>print()</code> extensively already. Here are its advanced features:</p>
+    
+                <pre><code># Basic printing
+    print("Hello, World!")
+    
+    # Multiple arguments
+    print("Hello", "World")  # Outputs: Hello World (space added automatically)
+    
+    # Custom separator
+    print("Hello", "World", sep="-")  # Outputs: Hello-World
+    
+    # Custom ending (default is newline)
+    print("Hello", end=" ")
+    print("World")  # Outputs: Hello World (on same line)
+    
+    # Printing variables
+    name = "Alice"
+    age = 30
+    print("Name:", name, "Age:", age)
+    
+    # F-string (best for mixing text and variables)
+    print(f"Name: {name}, Age: {age}")</code></pre>
+    
+                <h3>The input() Function</h3>
+    
+                <p>The <code>input()</code> function gets text from the user. It always returns a string:</p>
+    
+                <pre><code># Basic input
+    name = input("What is your name? ")
+    print(f"Hello, {name}!")
+    
+    # Converting input to numbers
+    age_str = input("What is your age? ")
+    age = int(age_str)  # Convert string to integer
+    
+    # One-liner conversion
+    age = int(input("What is your age? "))
+    
+    # Always validate user input!
+    try:
+        age = int(input("Enter your age: "))
+        print(f"You are {age} years old")
+    except ValueError:
+        print("That's not a valid number!")</code></pre>
+    
+                <div class="warning-box">
+                    <strong>Critical:</strong> <code>input()</code> always returns a string, even if the user types a
+                    number. If you need a number, you must convert it with <code>int()</code> or <code>float()</code>.
+                </div>
+    
+                <h3>Practical Input/Output Example</h3>
+    
+                <pre><code># Simple calculator
+    print("=== Simple Calculator ===")
+    
+    num1 = float(input("Enter first number: "))
+    operator = input("Enter operator (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+    
+    if operator == "+":
+        result = num1 + num2
+    elif operator == "-":
+        result = num1 - num2
+    elif operator == "*":
+        result = num1 * num2
+    elif operator == "/":
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            result = "Error: Division by zero"
+    else:
+        result = "Error: Invalid operator"
+    
+    print(f"Result: {result}")</code></pre>
+    
+                <h2>Python Conditional Statements (if, elif, else)</h2>
+    
+                <p>Conditional statements let your program make decisions based on conditions. They're like flowcharts in
+                    code form.</p>
+    
+                <h3>The if Statement</h3>
+    
+                <p>The simplest conditional executes code only if a condition is true:</p>
+    
+                <pre><code>age = 20
+    
+    if age >= 18:
+        print("You are an adult")
+        print("You can vote")
+    
+    print("This runs regardless")</code></pre>
+    
+                <p>Notice the indentation everything indented after the <code>if</code> statement only runs if the condition
+                    is true.</p>
+    
+                <h3>if-else: Two Paths</h3>
+    
+                <pre><code>temperature = 15
+    
+    if temperature > 20:
+        print("It's warm outside")
+        print("Wear light clothes")
+    else:
+        print("It's cold outside")
+        print("Wear a jacket")
+    
+    print("Have a nice day!")</code></pre>
+    
+                <h3>elif: Multiple Conditions</h3>
+    
+                <p><code>elif</code> (short for "else if") checks additional conditions:</p>
+    
+                <pre><code>score = 85
+    
+    if score >= 90:
+        grade = "A"
+    elif score >= 80:
+        grade = "B"
+    elif score >= 70:
+        grade = "C"
+    elif score >= 60:
+        grade = "D"
+    else:
+        grade = "F"
+    
+    print(f"Your grade is: {grade}")</code></pre>
+    
+                <div class="info-box">
+                    <strong>How elif Works:</strong> Python checks conditions in order. As soon as one is true, it executes
+                    that block and skips the rest. If <code>score</code> is 85, it matches the second condition (>= 80) and
+                    never checks the remaining ones.
+                </div>
+    
+                <h3>Nested Conditionals</h3>
+    
+                <p>You can put conditionals inside other conditionals:</p>
+    
+                <pre><code>age = 25
+    has_license = True
+    
+    if age >= 18:
+        if has_license:
+            print("You can drive")
+        else:
+            print("You need a license to drive")
+    else:
+        print("You're too young to drive")
+    
+    # Better: combine conditions with 'and'
+    if age >= 18 and has_license:
+        print("You can drive")
+    elif age >= 18:
+        print("You need a license to drive")
+    else:
+        print("You're too young to drive")</code></pre>
+    
+                <h3>Ternary Operator: One-Line Conditionals</h3>
+    
+                <p>For simple if-else statements, Python offers a compact syntax:</p>
+    
+                <pre><code># Regular if-else
+    age = 20
+    if age >= 18:
+        status = "adult"
+    else:
+        status = "minor"
+    
+    # Ternary operator (one line)
+    status = "adult" if age >= 18 else "minor"
+    
+    # Useful for simple assignments
+    max_value = a if a > b else b
+    message = "Pass" if score >= 60 else "Fail"</code></pre>
+    
+                <h2>Python Loops (for, while)</h2>
+    
+                <p>Loops let you repeat code multiple times without writing it repeatedly. They're essential for processing
+                    collections of data and automating repetitive tasks.</p>
+    
+                <h3>The for Loop: Iterating Over Sequences</h3>
+    
+                <p>The <code>for</code> loop is perfect when you know what you want to iterate over:</p>
+    
+                <pre><code># Loop over a range of numbers
+    for i in range(5):
+        print(i)
+    # Outputs: 0, 1, 2, 3, 4
+    
+    # Loop over a list
+    fruits = ["apple", "banana", "cherry"]
+    for fruit in fruits:
+        print(f"I like {fruit}")
+    
+    # Loop over a string
+    for letter in "Python":
+        print(letter)
+    
+    # Range with start and end
+    for i in range(1, 6):  # 1 to 5 (6 is exclusive)
+        print(i)
+    
+    # Range with step
+    for i in range(0, 10, 2):  # Even numbers: 0, 2, 4, 6, 8
+        print(i)</code></pre>
+    
+                <h3>The while Loop: Repeating Until a Condition Changes</h3>
+    
+                <p>The <code>while</code> loop continues until its condition becomes false:</p>
+    
+                <pre><code># Count to 5
+    count = 1
+    while count <= 5:
+        print(count)
+        count += 1
+    
+    # User input loop
+    password = ""
+    while password != "secret":
+        password = input("Enter password: ")
+    print("Access granted!")
+    
+    # Be careful of infinite loops!
+    # while True:  # Runs forever unless you break out
+    #     print("Forever...")</code></pre>
+    
+                <div class="warning-box">
+                    <strong>Infinite Loop Danger:</strong> Make sure your while loop condition eventually becomes false! If
+                    it doesn't, your program will run forever. Always ensure the loop variable changes inside the loop.
+                </div>
+    
+                <h3>Loop Control: break and continue</h3>
+    
+                <pre><code># break - exit the loop immediately
+    for i in range(10):
+        if i == 5:
+            break  # Stop when i reaches 5
+        print(i)
+    # Outputs: 0, 1, 2, 3, 4
+    
+    # continue - skip to next iteration
+    for i in range(5):
+        if i == 2:
+            continue  # Skip 2
+        print(i)
+    # Outputs: 0, 1, 3, 4
+    
+    # Real-world example: finding first matching item
+    numbers = [1, 3, 7, 2, 9, 4]
+    for num in numbers:
+        if num % 2 == 0:  # First even number
+            print(f"Found even number: {num}")
+            break</code></pre>
+    
+                <h3>Nested Loops</h3>
+    
+                <p>Loops can contain other loops:</p>
+    
+                <pre><code># Multiplication table
+    for i in range(1, 6):
+        for j in range(1, 6):
+            print(f"{i} x {j} = {i*j}")
+        print("---")  # Separator between rows
+    
+    # Pattern printing
+    for i in range(5):
+        for j in range(i + 1):
+            print("*", end="")
+        print()  # New line
+    # Outputs:
+    # *
+    # **
+    # ***
+    # ****
+    # *****</code></pre>
+    
+                <h3>The else Clause in Loops</h3>
+    
+                <p>Python loops can have an <code>else</code> clause that runs if the loop completes normally (not broken by
+                    <code>break</code>):</p>
+    
+                <pre><code># Search for a number
+    numbers = [1, 3, 5, 7, 9]
+    search = 6
+    
+    for num in numbers:
+        if num == search:
+            print(f"Found {search}!")
+            break
+    else:
+        print(f"{search} not found")  # Runs because we didn't break</code></pre>
+    
+                <h2>Python Functions Explained</h2>
+    
+                <p>Functions are reusable blocks of code that perform specific tasks. Think of them as mini-programs within
+                    your program.</p>
+    
+                <h3>Defining Functions</h3>
+    
+                <pre><code># Basic function
+    def greet():
+        print("Hello!")
+    
+    # Call the function
+    greet()  # Outputs: Hello!
+    
+    # Function with parameters
+    def greet_person(name):
+        print(f"Hello, {name}!")
+    
+    greet_person("Alice")  # Outputs: Hello, Alice!
+    
+    # Multiple parameters
+    def add_numbers(a, b):
+        result = a + b
+        print(f"{a} + {b} = {result}")
+    
+    add_numbers(5, 3)  # Outputs: 5 + 3 = 8</code></pre>
+    
+                <h3>Return Values</h3>
+    
+                <p>Functions can send results back using <code>return</code>:</p>
+    
+                <pre><code>def add(a, b):
+        return a + b
+    
+    result = add(5, 3)
+    print(result)  # 8
+    
+    # Can return multiple values
+    def get_user_info():
+        name = "Alice"
+        age = 30
+        city = "NYC"
+        return name, age, city
+    
+    name, age, city = get_user_info()
+    print(f"{name}, {age}, from {city}")
+    
+    # Function stops at return
+    def check_age(age):
+        if age < 18:
+            return "Too young"
+        return "Old enough"  # Only reached if age >= 18</code></pre>
+    
+                <h3>Default Parameters</h3>
+    
+                <pre><code>def greet(name="Guest"):
+        print(f"Hello, {name}!")
+    
+    greet("Alice")  # Hello, Alice!
+    greet()         # Hello, Guest! (uses default)
+    
+    # Multiple default parameters
+    def create_profile(name, age=18, city="Unknown"):
+        print(f"Name: {name}, Age: {age}, City: {city}")
+    
+    create_profile("Bob")                    # Uses defaults for age and city
+    create_profile("Alice", 25)              # Uses default for city
+    create_profile("Charlie", 30, "NYC")     # No defaults used</code></pre>
+    
+                <h3>Keyword Arguments</h3>
+    
+                <pre><code>def describe_pet(animal_type, pet_name, age):
+        print(f"I have a {age}-year-old {animal_type} named {pet_name}")
+    
+    # Positional arguments
+    describe_pet("dog", "Buddy", 3)
+    
+    # Keyword arguments (can be in any order)
+    describe_pet(pet_name="Buddy", age=3, animal_type="dog")
+    
+    # Mix positional and keyword (positional must come first)
+    describe_pet("dog", pet_name="Buddy", age=3)</code></pre>
+    
+                <h3>*args and **kwargs</h3>
+    
+                <p>Accept variable numbers of arguments:</p>
+    
+                <pre><code># *args - variable number of positional arguments
+    def sum_all(*numbers):
+        total = 0
+        for num in numbers:
+            total += num
+        return total
+    
+    print(sum_all(1, 2, 3))        # 6
+    print(sum_all(1, 2, 3, 4, 5))  # 15
+    
+    # **kwargs - variable number of keyword arguments
+    def print_info(**details):
+        for key, value in details.items():
+            print(f"{key}: {value}")
+    
+    print_info(name="Alice", age=30, city="NYC")</code></pre>
+    
+                <h3>Lambda Functions: Anonymous Functions</h3>
+    
+                <p>Lambda functions are small, unnamed functions for simple operations:</p>
+    
+                <pre><code># Regular function
+    def square(x):
+        return x ** 2
+    
+    # Lambda equivalent
+    square = lambda x: x ** 2
+    
+    print(square(5))  # 25
+    
+    # Lambda with multiple arguments
+    add = lambda a, b: a + b
+    print(add(3, 5))  # 8
+    
+    # Common use: with map(), filter(), sorted()
+    numbers = [1, 2, 3, 4, 5]
+    squared = list(map(lambda x: x**2, numbers))
+    print(squared)  # [1, 4, 9, 16, 25]
+    
+    evens = list(filter(lambda x: x % 2 == 0, numbers))
+    print(evens)  # [2, 4]</code></pre>
+    
+                <h2>Python Lists, Tuples, Sets, and Dictionaries</h2>
+    
+                <p>Python provides four main collection types. Each has unique characteristics that make it suitable for
+                    different tasks.</p>
+    
+                <h3>Lists: Ordered, Mutable Collections</h3>
+    
+                <pre><code># Creating lists
+    fruits = ["apple", "banana", "cherry"]
+    numbers = [1, 2, 3, 4, 5]
+    mixed = [1, "hello", True, 3.14]
+    
+    # Accessing elements
+    print(fruits[0])    # "apple"
+    print(fruits[-1])   # "cherry" (last item)
+    print(fruits[0:2])  # ["apple", "banana"] (slicing)
+    
+    # Modifying lists
+    fruits[0] = "orange"  # Change first item
+    fruits.append("grape")  # Add to end
+    fruits.insert(1, "kiwi")  # Insert at index 1
+    fruits.remove("banana")  # Remove by value
+    deleted = fruits.pop()  # Remove and return last item
+    del fruits[0]  # Delete by index
+    
+    # List methods
+    numbers = [3, 1, 4, 1, 5]
+    numbers.sort()  # Sort in place
+    numbers.reverse()  # Reverse in place
+    print(numbers.count(1))  # Count occurrences of 1
+    print(numbers.index(4))  # Find index of 4
+    
+    # List comprehension (elegant way to create lists)
+    squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
+    evens = [x for x in range(10) if x % 2 == 0]  # [0, 2, 4, 6, 8]</code></pre>
+    
+                <h3>Tuples: Ordered, Immutable Collections</h3>
+    
+                <pre><code># Creating tuples
+    coordinates = (10, 20)
+    person = ("Alice", 30, "NYC")
+    single_item = (42,)  # Comma needed for single-item tuple
+    
+    # Accessing (same as lists)
+    print(person[0])  # "Alice"
+    print(person[-1])  # "NYC"
+    
+    # Tuples are immutable - can't change
+    # person[0] = "Bob"  # ERROR!
+    
+    # But can unpack
+    name, age, city = person
+    print(name)  # "Alice"
+    
+    # Why use tuples?
+    # 1. Faster than lists
+    # 2. Protect data from modification
+    # 3. Can be dictionary keys (lists can't)</code></pre>
+    
+                <h3>Sets: Unordered, Unique Collections</h3>
+    
+                <pre><code># Creating sets
+    fruits = {"apple", "banana", "cherry"}
+    numbers = {1, 2, 3, 4, 5}
+    
+    # Automatically removes duplicates
+    numbers = {1, 2, 2, 3, 3, 3}  # Becomes {1, 2, 3}
+    
+    # Adding and removing
+    fruits.add("orange")
+    fruits.remove("banana")  # Error if not found
+    fruits.discard("grape")  # No error if not found
+    
+    # Set operations
+    a = {1, 2, 3, 4}
+    b = {3, 4, 5, 6}
+    
+    print(a | b)  # Union: {1, 2, 3, 4, 5, 6}
+    print(a & b)  # Intersection: {3, 4}
+    print(a - b)  # Difference: {1, 2}
+    
+    # Membership testing (very fast)
+    print(3 in a)  # True</code></pre>
+    
+                <h3>Dictionaries: Key-Value Pairs</h3>
+    
+                <pre><code># Creating dictionaries
+    person = {
+        "name": "Alice",
+        "age": 30,
+        "city": "NYC"
+    }
+    
+    # Accessing values
+    print(person["name"])  # "Alice"
+    print(person.get("age"))  # 30
+    print(person.get("country", "USA"))  # "USA" (default if key missing)
+    
+    # Adding/modifying
+    person["email"] = "alice@example.com"  # Add new key
+    person["age"] = 31  # Modify existing
+    
+    # Removing
+    del person["city"]
+    removed_value = person.pop("email")
+    
+    # Dictionary methods
+    print(person.keys())    # dict_keys(['name', 'age'])
+    print(person.values())  # dict_values(['Alice', 31])
+    print(person.items())   # dict_items([('name', 'Alice'), ('age', 31)])
+    
+    # Looping through dictionary
+    for key, value in person.items():
+        print(f"{key}: {value}")
+    
+    # Dictionary comprehension
+    squares = {x: x**2 for x in range(5)}  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}</code></pre>
+    
+                <div class="tip-box">
+                    <strong>Choosing the Right Collection:</strong><br>
+                    - Use <strong>lists</strong> when you need ordered, changeable data<br>
+                    - Use <strong>tuples</strong> when you need ordered, unchangeable data<br>
+                    - Use <strong>sets</strong> when you need unique values and fast membership testing<br>
+                    - Use <strong>dictionaries</strong> when you need key-value associations
+                </div>
+    
+                <h2>Common Beginner Mistakes in Python</h2>
+    
+                <p>Every Python beginner makes these mistakes. Learning to recognize and fix them will save you hours of
+                    frustration.</p>
+    
+                <h3>Mistake #1: Indentation Errors</h3>
+    
+                <pre><code># Wrong - inconsistent indentation
+    def greet():
+      print("Hello")  # 2 spaces
+        print("World")  # 4 spaces - ERROR!
+    
+    # Right - consistent indentation
+    def greet():
+        print("Hello")  # 4 spaces
+        print("World")  # 4 spaces</code></pre>
+    
+                <h3>Mistake #2: Forgetting Colons</h3>
+    
+                <pre><code># Wrong - missing colons
+    if age >= 18
+        print("Adult")
+    
+    # Right
+    if age >= 18:
+        print("Adult")
+    
+    # Also needed for loops, functions, classes
+    for i in range(5):  # Colon here!
+    def my_function():   # And here!
+    class MyClass:       # And here!</code></pre>
+    
+                <h3>Mistake #3: Using = Instead of ==</h3>
+    
+                <pre><code># Wrong - assignment in condition
+    if age = 18:  # ERROR! This assigns, not compares
+        print("Adult")
+    
+    # Right - comparison operator
+    if age == 18:
+        print("Adult")</code></pre>
+    
+                <h3>Mistake #4: Modifying List While Iterating</h3>
+    
+                <pre><code># Wrong - modifying list during iteration
+    numbers = [1, 2, 3, 4, 5]
+    for num in numbers:
+        if num % 2 == 0:
+            numbers.remove(num)  # Causes unexpected behavior!
+    
+    # Right - iterate over copy
+    numbers = [1, 2, 3, 4, 5]
+    for num in numbers.copy():
+        if num % 2 == 0:
+            numbers.remove(num)
+    
+    # Better - list comprehension
+    numbers = [1, 2, 3, 4, 5]
+    numbers = [num for num in numbers if num % 2 != 0]</code></pre>
+    
+                <h3>Mistake #5: Not Converting input() to Number</h3>
+    
+                <pre><code># Wrong
+    age = input("Enter age: ")
+    if age >= 18:  # ERROR! Comparing string to number
+        print("Adult")
+    
+    # Right
+    age = int(input("Enter age: "))
+    if age >= 18:
+        print("Adult")</code></pre>
+    
+                <h3>Mistake #6: Mutable Default Arguments</h3>
+    
+                <pre><code># Wrong - dangerous!
+    def add_item(item, items=[]):  # Default list is created once!
+        items.append(item)
+        return items
+    
+    print(add_item("apple"))   # ['apple']
+    print(add_item("banana"))  # ['apple', 'banana'] - Unexpected!
+    
+    # Right
+    def add_item(item, items=None):
+        if items is None:
+            items = []
+        items.append(item)
+        return items</code></pre>
+    
+                <div class="warning-box">
+                    <strong>Pro Tip:</strong> When you get an error, read the error message carefully! Python tells you
+                    exactly what went wrong and which line caused the error. The last line of the error message is usually
+                    the most important.
+                </div>
+    
+                <p
+                    style="margin-top: 40px; padding: 20px; background: #f0f9ff; border-left: 4px solid #3776ab; border-radius: 4px;">
+                    <strong>🎓 Congratulations!</strong> You've completed the Beginner section of this Python tutorial. You
+                    now understand variables, data types, control flow, functions, and collections—the fundamental building
+                    blocks of Python programming.
+                    <br><br>
+                    <strong>Next Steps:</strong> The Intermediate section awaits, where you'll learn about modules, file
+                    handling, object-oriented programming, and working with external data. Take a break, practice what
+                    you've learned by building small projects, then continue when you're ready.
+                </p>
+    
+                <span class="section-label intermediate">INTERMEDIATE</span>
+                <h2>Python Modules and Packages</h2>
+    
+                <p>As your programs grow, organizing code becomes essential. Modules are Python files containing functions,
+                    classes, and variables that you can import and reuse. Packages are collections of related modules
+                    organized in directories.</p>
+    
+                <h3>Creating Your First Module</h3>
+    
+                <p>A module is simply a Python file. Create a file called <code>math_utils.py</code>:</p>
+    
+                <pre><code># math_utils.py
+    def add(a, b):
+        return a + b
+    
+    def subtract(a, b):
+        return a - b
+    
+    def multiply(a, b):
+        return a * b
+    
+    PI = 3.14159</code></pre>
+    
+                <p>Now you can import and use this module in another file:</p>
+    
+                <pre><code># main.py
+    import math_utils
+    
+    result = math_utils.add(5, 3)
+    print(result)  # 8
+    
+    print(math_utils.PI)  # 3.14159</code></pre>
+    
+                <h3>Import Variations</h3>
+    
+                <pre><code># Import entire module
+    import math_utils
+    result = math_utils.add(5, 3)
+    
+    # Import specific items
+    from math_utils import add, PI
+    result = add(5, 3)  # No need for math_utils prefix
+    print(PI)
+    
+    # Import with alias
+    import math_utils as mu
+    result = mu.add(5, 3)
+    
+    # Import everything (avoid this - pollutes namespace)
+    from math_utils import *
+    result = add(5, 3)  # Works but risky</code></pre>
+    
+                <div class="warning-box">
+                    <strong>Best Practice:</strong> Avoid <code>from module import *</code> because it imports everything,
+                    making it unclear where functions come from. Use explicit imports or import the whole module.
+                </div>
+    
+                <h3>The Standard Library: Built-in Modules</h3>
+    
+                <p>Python includes dozens of modules for common tasks:</p>
+    
+                <pre><code># Working with dates
+    import datetime
+    
+    now = datetime.datetime.now()
+    print(now)  # 2026-01-25 14:30:45.123456
+    
+    birthday = datetime.date(1990, 5, 15)
+    age_days = (datetime.date.today() - birthday).days
+    
+    # Random numbers
+    import random
+    
+    number = random.randint(1, 100)  # Random integer 1-100
+    choice = random.choice(['rock', 'paper', 'scissors'])
+    random.shuffle(my_list)  # Shuffle list in place
+    
+    # Math operations
+    import math
+    
+    print(math.sqrt(16))  # 4.0
+    print(math.ceil(4.2))  # 5
+    print(math.floor(4.8))  # 4
+    
+    # Operating system operations
+    import os
+    
+    print(os.getcwd())  # Current directory
+    os.mkdir('new_folder')  # Create directory
+    files = os.listdir('.')  # List files in current directory</code></pre>
+    
+                <h3>Creating Packages</h3>
+    
+                <p>Packages organize related modules into directories. Here's a simple package structure:</p>
+    
+                <pre><code>my_package/
+        __init__.py          # Makes this directory a package
+        math_operations.py
+        string_operations.py</code></pre>
+    
+                <p>The <code>__init__.py</code> file can be empty or contain initialization code:</p>
+    
+                <pre><code># my_package/__init__.py
+    print("Package imported!")
+    
+    # Can import specific items to package level
+    from .math_operations import add
+    from .string_operations import capitalize</code></pre>
+    
+                <p>Using your package:</p>
+    
+                <pre><code>from my_package import add
+    from my_package.string_operations import reverse_string
+    
+    result = add(5, 3)
+    text = reverse_string("hello")</code></pre>
+    
+                <h2>Python Scope and Namespaces</h2>
+    
+                <p>Understanding scope where variables are accessible—prevents bugs and helps you write cleaner code. Python
+                    uses the LEGB rule to resolve names: Local, Enclosing, Global, Built-in.</p>
+    
+                <h3>Local Scope</h3>
+    
+                <p>Variables created inside functions are local to that function:</p>
+    
+                <pre><code>def my_function():
+        local_var = "I'm local"
+        print(local_var)  # Works here
+    
+    my_function()
+    print(local_var)  # ERROR! local_var doesn't exist outside function</code></pre>
+    
+                <h3>Global Scope</h3>
+    
+                <p>Variables created outside functions are global:</p>
+    
+                <pre><code>global_var = "I'm global"
+    
+    def my_function():
+        print(global_var)  # Can read global variables
+    
+    my_function()  # Prints: I'm global
+    print(global_var)  # Also works here</code></pre>
+    
+                <h3>Modifying Global Variables</h3>
+    
+                <pre><code>counter = 0
+    
+    def increment():
+        global counter  # Declare you're using global variable
+        counter += 1
+    
+    increment()
+    print(counter)  # 1
+    
+    # Without 'global' keyword
+    def bad_increment():
+        counter = 0  # Creates NEW local variable
+        counter += 1
+    
+    bad_increment()
+    print(counter)  # Still 1 (global unchanged)</code></pre>
+    
+                <h3>Enclosing Scope (Closures)</h3>
+    
+                <pre><code>def outer():
+        x = "outer"
+        
+        def inner():
+            print(x)  # Can access outer function's variables
+        
+        inner()
+    
+    outer()  # Prints: outer
+    
+    # Modifying enclosing scope
+    def counter_factory():
+        count = 0
+        
+        def increment():
+            nonlocal count  # Modify enclosing function's variable
+            count += 1
+            return count
+        
+        return increment
+    
+    counter = counter_factory()
+    print(counter())  # 1
+    print(counter())  # 2
+    print(counter())  # 3</code></pre>
+    
+                <h3>The LEGB Rule in Action</h3>
+    
+                <pre><code>x = "global"
+    
+    def outer():
+        x = "enclosing"
+        
+        def inner():
+            x = "local"
+            print(x)  # Prints "local" (L wins)
+        
+        inner()
+        print(x)  # Prints "enclosing" (E wins)
+    
+    outer()
+    print(x)  # Prints "global" (G wins)</code></pre>
+    
+                <h2>Python Error Handling (try, except, finally)</h2>
+    
+                <p>Errors are inevitable. Good error handling makes your programs robust and user-friendly instead of
+                    crashing with cryptic messages.</p>
+    
+                <h3>Basic Try-Except</h3>
+    
+                <pre><code># Without error handling
+    number = int(input("Enter a number: "))  # Crashes if user enters text!
+    
+    # With error handling
+    try:
+        number = int(input("Enter a number: "))
+        print(f"You entered: {number}")
+    except ValueError:
+        print("That's not a valid number!")</code></pre>
+    
+                <h3>Catching Multiple Exceptions</h3>
+    
+                <pre><code>try:
+        numerator = int(input("Enter numerator: "))
+        denominator = int(input("Enter denominator: "))
+        result = numerator / denominator
+        print(f"Result: {result}")
+    except ValueError:
+        print("Please enter valid numbers")
+    except ZeroDivisionError:
+        print("Cannot divide by zero!")
+    except Exception as e:
+        print(f"Unexpected error: {e}")</code></pre>
+    
+                <h3>The else and finally Clauses</h3>
+    
+                <pre><code>try:
+        file = open("data.txt", "r")
+        data = file.read()
+    except FileNotFoundError:
+        print("File not found!")
+    else:
+        # Runs only if no exception occurred
+        print("File read successfully")
+        print(f"Content: {data}")
+    finally:
+        # Always runs, even if exception occurred
+        if 'file' in locals():
+            file.close()
+        print("Cleanup complete")</code></pre>
+    
+                <h3>Raising Exceptions</h3>
+    
+                <pre><code>def validate_age(age):
+        if age < 0:
+            raise ValueError("Age cannot be negative")
+        if age > 150:
+            raise ValueError("Age seems unrealistic")
+        return True
+    
+    try:
+        validate_age(-5)
+    except ValueError as e:
+        print(f"Validation error: {e}")</code></pre>
+    
+                <h3>Custom Exceptions</h3>
+    
+                <pre><code>class InsufficientFundsError(Exception):
+        """Raised when account has insufficient funds"""
+        pass
+    
+    class BankAccount:
+        def __init__(self, balance):
+            self.balance = balance
+        
+        def withdraw(self, amount):
+            if amount > self.balance:
+                raise InsufficientFundsError(
+                    f"Cannot withdraw ${amount}. Balance: ${self.balance}"
+                )
+            self.balance -= amount
+            return self.balance
+    
+    account = BankAccount(100)
+    try:
+        account.withdraw(150)
+    except InsufficientFundsError as e:
+        print(e)</code></pre>
+    
+                <div class="tip-box">
+                    <strong>When to Use Try-Except:</strong> Use it for operations that might fail through no fault of your
+                    code file operations, network requests, user input, external API calls. Don't use it to hide programming
+                    errors you should fix.
+                </div>
+    
+                <h2>Working with Files (Read/Write)</h2>
+    
+                <p>File handling is essential for storing data, processing logs, and working with external information.
+                    Python makes file operations straightforward.</p>
+    
+                <h3>Reading Files</h3>
+    
+                <pre><code># Reading entire file
+    with open("data.txt", "r") as file:
+        content = file.read()
+        print(content)
+    
+    # Reading line by line
+    with open("data.txt", "r") as file:
+        for line in file:
+            print(line.strip())  # strip() removes newline
+    
+    # Reading into list
+    with open("data.txt", "r") as file:
+        lines = file.readlines()
+        print(lines)  # List of lines with newlines</code></pre>
+    
+                <div class="info-box">
+                    <strong>The 'with' Statement:</strong> Using <code>with</code> automatically closes the file when done,
+                    even if an error occurs. Always prefer this over manually opening and closing files.
+                </div>
+    
+                <h3>Writing Files</h3>
+    
+                <pre><code># Writing (overwrites existing file)
+    with open("output.txt", "w") as file:
+        file.write("Hello, World!\n")
+        file.write("Second line\n")
+    
+    # Appending (adds to existing file)
+    with open("output.txt", "a") as file:
+        file.write("Appended line\n")
+    
+    # Writing multiple lines
+    lines = ["Line 1\n", "Line 2\n", "Line 3\n"]
+    with open("output.txt", "w") as file:
+        file.writelines(lines)</code></pre>
+    
+                <h3>File Modes</h3>
+    
+                <ul>
+                    <li><code>'r'</code> - Read (default) - File must exist</li>
+                    <li><code>'w'</code> - Write - Creates file or overwrites existing</li>
+                    <li><code>'a'</code> - Append - Creates file or appends to existing</li>
+                    <li><code>'r+'</code> - Read and write</li>
+                    <li><code>'b'</code> - Binary mode (add to any mode: 'rb', 'wb')</li>
+                </ul>
+    
+                <h3>Working with CSV Files</h3>
+    
+                <pre><code>import csv
+    
+    # Reading CSV
+    with open("data.csv", "r") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(row)  # Each row is a list
+    
+    # Reading CSV as dictionary
+    with open("data.csv", "r") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            print(row['name'], row['age'])  # Access by column name
+    
+    # Writing CSV
+    data = [
+        ['Name', 'Age', 'City'],
+        ['Alice', '30', 'NYC'],
+        ['Bob', '25', 'LA']
+    ]
+    
+    with open("output.csv", "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(data)</code></pre>
+    
+                <h3>Checking if File Exists</h3>
+    
+                <pre><code>import os
+    
+    if os.path.exists("data.txt"):
+        with open("data.txt", "r") as file:
+            content = file.read()
+    else:
+        print("File not found!")
+    
+    # Check if path is file or directory
+    print(os.path.isfile("data.txt"))  # True if file
+    print(os.path.isdir("my_folder"))  # True if directory</code></pre>
+    
+                <h2>Python List Comprehensions</h2>
+    
+                <p>List comprehensions provide an elegant way to create lists based on existing lists or ranges. They're
+                    more concise and often faster than traditional loops.</p>
+    
+                <h3>Basic List Comprehension</h3>
+    
+                <pre><code># Traditional way
+    squares = []
+    for x in range(10):
+        squares.append(x ** 2)
+    
+    # List comprehension way
+    squares = [x ** 2 for x in range(10)]
+    # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    
+    # String manipulation
+    words = ['hello', 'world', 'python']
+    uppercase = [word.upper() for word in words]
+    # ['HELLO', 'WORLD', 'PYTHON']</code></pre>
+    
+                <h3>List Comprehension with Conditions</h3>
+    
+                <pre><code># Only even numbers
+    evens = [x for x in range(20) if x % 2 == 0]
+    # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+    
+    # Only positive numbers
+    numbers = [-2, -1, 0, 1, 2, 3]
+    positives = [x for x in numbers if x > 0]
+    # [1, 2, 3]
+    
+    # If-else in comprehension
+    labels = ['even' if x % 2 == 0 else 'odd' for x in range(5)]
+    # ['even', 'odd', 'even', 'odd', 'even']</code></pre>
+    
+                <h3>Nested List Comprehensions</h3>
+    
+                <pre><code># Flattening a 2D list
+    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    flattened = [num for row in matrix for num in row]
+    # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    # Creating multiplication table
+    table = [[i * j for j in range(1, 6)] for i in range(1, 6)]
+    # [[1, 2, 3, 4, 5], [2, 4, 6, 8, 10], ...]</code></pre>
+    
+                <h3>Dictionary and Set Comprehensions</h3>
+    
+                <pre><code># Dictionary comprehension
+    squares_dict = {x: x**2 for x in range(5)}
+    # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+    
+    # Set comprehension
+    unique_lengths = {len(word) for word in ['hello', 'world', 'hi', 'bye']}
+    # {2, 5} - unique lengths
+    
+    # Filtering dictionary
+    prices = {'apple': 0.50, 'banana': 0.25, 'cherry': 0.75}
+    expensive = {k: v for k, v in prices.items() if v > 0.30}
+    # {'apple': 0.50, 'cherry': 0.75}</code></pre>
+    
+                <h2>Python OOP (Classes and Objects)</h2>
+    
+                <p>Object-Oriented Programming (OOP) lets you model real-world concepts as objects with properties
+                    (attributes) and behaviors (methods). It's essential for building complex, maintainable programs.</p>
+    
+                <h3>Creating Your First Class</h3>
+    
+                <pre><code>class Dog:
+        def __init__(self, name, age):
+            self.name = name  # Attribute
+            self.age = age
+        
+        def bark(self):  # Method
+            print(f"{self.name} says Woof!")
+        
+        def get_info(self):
+            return f"{self.name} is {self.age} years old"
+    
+    # Creating objects (instances)
+    dog1 = Dog("Buddy", 3)
+    dog2 = Dog("Max", 5)
+    
+    dog1.bark()  # Buddy says Woof!
+    print(dog2.get_info())  # Max is 5 years old</code></pre>
+    
+                <h3>Understanding __init__ and self</h3>
+    
+                <p><code>__init__</code> is a special method called when creating a new object. <code>self</code> refers to
+                    the instance being created:</p>
+    
+                <pre><code>class Person:
+        def __init__(self, name, age):
+            # self.name creates an attribute called 'name'
+            # The parameter 'name' provides the initial value
+            self.name = name
+            self.age = age
+            self.greet_count = 0  # Can initialize attributes without parameters
+        
+        def greet(self):
+            # self allows access to the instance's attributes
+            self.greet_count += 1
+            print(f"Hello, I'm {self.name}")
+    
+    person = Person("Alice", 30)
+    person.greet()  # Hello, I'm Alice</code></pre>
+    
+                <h3>Class vs Instance Attributes</h3>
+    
+                <pre><code>class Dog:
+        species = "Canis familiaris"  # Class attribute (shared by all)
+        
+        def __init__(self, name):
+            self.name = name  # Instance attribute (unique to each)
+    
+    dog1 = Dog("Buddy")
+    dog2 = Dog("Max")
+    
+    print(dog1.species)  # Canis familiaris
+    print(dog2.species)  # Canis familiaris (same for all)
+    
+    print(dog1.name)  # Buddy
+    print(dog2.name)  # Max (different for each)
+    
+    # Changing class attribute affects all instances
+    Dog.species = "Canis lupus"
+    print(dog1.species)  # Canis lupus
+    print(dog2.species)  # Canis lupus</code></pre>
+    
+                <h3>Properties and Encapsulation</h3>
+    
+                <pre><code>class BankAccount:
+        def __init__(self, balance):
+            self._balance = balance  # _ indicates "private"
+        
+        @property
+        def balance(self):
+            return self._balance
+        
+        @balance.setter
+        def balance(self, value):
+            if value < 0:
+                raise ValueError("Balance cannot be negative")
+            self._balance = value
+        
+        def deposit(self, amount):
+            if amount > 0:
+                self._balance += amount
+        
+        def withdraw(self, amount):
+            if amount > self._balance:
+                print("Insufficient funds")
+            else:
+                self._balance -= amount
+    
+    account = BankAccount(1000)
+    print(account.balance)  # Uses @property getter
+    account.deposit(500)
+    account.balance = 2000  # Uses @balance.setter</code></pre>
+    
+                <h2>Inheritance and Polymorphism</h2>
+    
+                <p>Inheritance lets classes build upon existing classes, reusing and extending their functionality.
+                    Polymorphism allows objects of different classes to be used interchangeably.</p>
+    
+                <h3>Basic Inheritance</h3>
+    
+                <pre><code>class Animal:
+        def __init__(self, name):
+            self.name = name
+        
+        def speak(self):
+            print("Some generic animal sound")
+    
+    class Dog(Animal):  # Dog inherits from Animal
+        def speak(self):  # Override parent method
+            print(f"{self.name} says Woof!")
+    
+    class Cat(Animal):
+        def speak(self):
+            print(f"{self.name} says Meow!")
+    
+    # Using inherited classes
+    dog = Dog("Buddy")
+    cat = Cat("Whiskers")
+    
+    dog.speak()  # Buddy says Woof!
+    cat.speak()  # Whiskers says Meow!</code></pre>
+    
+                <h3>Calling Parent Methods</h3>
+    
+                <pre><code>class Vehicle:
+        def __init__(self, brand, model):
+            self.brand = brand
+            self.model = model
+        
+        def info(self):
+            return f"{self.brand} {self.model}"
+    
+    class Car(Vehicle):
+        def __init__(self, brand, model, doors):
+            super().__init__(brand, model)  # Call parent __init__
+            self.doors = doors
+        
+        def info(self):
+            basic_info = super().info()  # Call parent info()
+            return f"{basic_info} - {self.doors} doors"
+    
+    car = Car("Toyota", "Camry", 4)
+    print(car.info())  # Toyota Camry - 4 doors</code></pre>
+    
+                <h3>Multiple Inheritance</h3>
+    
+                <pre><code>class Flyable:
+        def fly(self):
+            print("Flying!")
+    
+    class Swimmable:
+        def swim(self):
+            print("Swimming!")
+    
+    class Duck(Flyable, Swimmable):
+        def quack(self):
+            print("Quack!")
+    
+    duck = Duck()
+    duck.fly()    # Flying!
+    duck.swim()   # Swimming!
+    duck.quack()  # Quack!</code></pre>
+    
+                <h3>Polymorphism in Action</h3>
+    
+                <pre><code>class Shape:
+        def area(self):
+            pass
+    
+    class Rectangle(Shape):
+        def __init__(self, width, height):
+            self.width = width
+            self.height = height
+        
+        def area(self):
+            return self.width * self.height
+    
+    class Circle(Shape):
+        def __init__(self, radius):
+            self.radius = radius
+        
+        def area(self):
+            return 3.14159 * self.radius ** 2
+    
+    # Polymorphism: same method name, different behavior
+    shapes = [Rectangle(5, 10), Circle(7), Rectangle(3, 4)]
+    
+    for shape in shapes:
+        print(f"Area: {shape.area()}")  # Works for all shapes!</code></pre>
+    
+                <h2>Python Virtual Environments</h2>
+    
+                <p>Virtual environments create isolated Python installations for each project. This prevents package
+                    conflicts between projects and makes your code portable.</p>
+    
+                <h3>Why Use Virtual Environments?</h3>
+    
+                <ul>
+                    <li>Different projects can use different package versions</li>
+                    <li>Keeps your system Python clean</li>
+                    <li>Makes projects portable and reproducible</li>
+                    <li>Required for deploying applications</li>
+                </ul>
+    
+                <h3>Creating a Virtual Environment</h3>
+    
+                <pre><code># Create virtual environment
+    python -m venv myenv
+    
+    # Activate on Windows
+    myenv\Scripts\activate
+    
+    # Activate on Mac/Linux
+    source myenv/bin/activate
+    
+    # You'll see (myenv) in your terminal prompt when active</code></pre>
+    
+                <h3>Installing Packages</h3>
+    
+                <pre><code># Install a package
+    pip install requests
+    
+    # Install specific version
+    pip install requests==2.28.0
+    
+    # Install multiple packages
+    pip install requests numpy pandas
+    
+    # Uninstall package
+    pip uninstall requests</code></pre>
+    
+                <h3>Requirements File</h3>
+    
+                <pre><code># Save all installed packages to file
+    pip freeze > requirements.txt
+    
+    # Install all packages from requirements file
+    pip install -r requirements.txt
+    
+    # Example requirements.txt:
+    # requests==2.28.0
+    # numpy==1.24.0
+    # pandas==1.5.0</code></pre>
+    
+                <h3>Deactivating Virtual Environment</h3>
+    
+                <pre><code># Deactivate (returns to system Python)
+    deactivate</code></pre>
+    
+                <h2>Working with JSON and APIs</h2>
+    
+                <p>JSON (JavaScript Object Notation) is the standard format for data exchange on the web. Python's
+                    <code>json</code> module makes working with JSON data simple.</p>
+    
+                <h3>JSON Basics</h3>
+    
+                <pre><code>import json
+    
+    # Python dictionary to JSON string
+    person = {
+        "name": "Alice",
+        "age": 30,
+        "city": "NYC",
+        "hobbies": ["reading", "coding"]
+    }
+    
+    json_string = json.dumps(person)
+    print(json_string)
+    # {"name": "Alice", "age": 30, "city": "NYC", "hobbies": ["reading", "coding"]}
+    
+    # Pretty printing JSON
+    pretty_json = json.dumps(person, indent=4)
+    print(pretty_json)
+    
+    # JSON string to Python dictionary
+    json_data = '{"name": "Bob", "age": 25}'
+    python_dict = json.loads(json_data)
+    print(python_dict["name"])  # Bob</code></pre>
+    
+                <h3>Reading and Writing JSON Files</h3>
+    
+                <pre><code># Writing JSON to file
+    data = {
+        "users": [
+            {"name": "Alice", "age": 30},
+            {"name": "Bob", "age": 25}
+        ]
+    }
+    
+    with open("data.json", "w") as file:
+        json.dump(data, file, indent=4)
+    
+    # Reading JSON from file
+    with open("data.json", "r") as file:
+        loaded_data = json.load(file)
+        print(loaded_data["users"][0]["name"])  # Alice</code></pre>
+    
+                <h3>Making API Requests</h3>
+    
+                <pre><code>import requests
+    
+    # GET request
+    response = requests.get("https://api.github.com/users/python")
+    data = response.json()  # Parse JSON response
+    
+    print(data["name"])
+    print(data["public_repos"])
+    
+    # POST request with JSON data
+    user_data = {
+        "username": "newuser",
+        "email": "user@example.com"
+    }
+    
+    response = requests.post(
+        "https://api.example.com/users",
+        json=user_data,
+        headers={"Authorization": "Bearer token123"}
+    )
+    
+    if response.status_code == 201:
+        print("User created successfully!")
+    else:
+        print(f"Error: {response.status_code}")</code></pre>
+    
+                <h3>Handling API Errors</h3>
+    
+                <pre><code>import requests
+    
+    try:
+        response = requests.get("https://api.example.com/data", timeout=5)
+        response.raise_for_status()  # Raises exception for 4xx/5xx status
+        data = response.json()
+        print(data)
+    except requests.exceptions.Timeout:
+        print("Request timed out")
+    except requests.exceptions.HTTPError as e:
+        print(f"HTTP Error: {e}")
+    except requests.exceptions.RequestException as e:
+        print(f"Error: {e}")</code></pre>
+    
+                <h2>Python Standard Library Overview</h2>
+    
+                <p>Python's standard library provides modules for common tasks without installing external packages. Here
+                    are the most useful ones:</p>
+    
+                <h3>Collections Module</h3>
+    
+                <pre><code>from collections import Counter, defaultdict, namedtuple
+    
+    # Counter - count occurrences
+    words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']
+    counts = Counter(words)
+    print(counts)  # Counter({'apple': 3, 'banana': 2, 'cherry': 1})
+    print(counts.most_common(2))  # [('apple', 3), ('banana', 2)]
+    
+    # defaultdict - dictionary with default values
+    from collections import defaultdict
+    grades = defaultdict(list)
+    grades['Alice'].append(90)
+    grades['Bob'].append(85)  # No KeyError if key doesn't exist
+    
+    # namedtuple - lightweight object
+    Point = namedtuple('Point', ['x', 'y'])
+    p = Point(10, 20)
+    print(p.x, p.y)  # 10 20</code></pre>
+    
+                <h3>itertools Module</h3>
+    
+                <pre><code>from itertools import combinations, permutations, cycle, chain
+    
+    # Combinations
+    items = ['A', 'B', 'C']
+    for combo in combinations(items, 2):
+        print(combo)  # ('A', 'B'), ('A', 'C'), ('B', 'C')
+    
+    # Cycle through items infinitely
+    colors = cycle(['red', 'green', 'blue'])
+    for i in range(5):
+        print(next(colors))  # red, green, blue, red, green
+    
+    # Chain multiple iterables
+    list1 = [1, 2, 3]
+    list2 = [4, 5, 6]
+    combined = list(chain(list1, list2))  # [1, 2, 3, 4, 5, 6]</code></pre>
+    
+                <h3>pathlib Module (Modern File Paths)</h3>
+    
+                <pre><code>from pathlib import Path
+    
+    # Create path object
+    path = Path('data/files/document.txt')
+    
+    # Path operations
+    print(path.exists())  # Check if exists
+    print(path.is_file())  # Check if file
+    print(path.parent)  # data/files
+    print(path.name)  # document.txt
+    print(path.suffix)  # .txt
+    
+    # Reading/writing with pathlib
+    path.write_text("Hello, World!")
+    content = path.read_text()
+    
+    # Iterate over directory
+    data_dir = Path('data')
+    for file in data_dir.glob('*.txt'):
+        print(file)</code></pre>
+    
+                <span class="section-label advanced">ADVANCED</span>
+                <h2>Python Decorators Explained</h2>
+    
+                <p>Decorators modify the behavior of functions or classes without changing their source code. They're
+                    powerful tools for adding functionality like logging, timing, authentication, and caching.</p>
+    
+                <h3>Understanding Decorators</h3>
+    
+                <p>A decorator is a function that takes another function and extends its behavior:</p>
+    
+                <pre><code>def my_decorator(func):
+        def wrapper():
+            print("Before function call")
+            func()
+            print("After function call")
+        return wrapper
+    
+    @my_decorator
+    def say_hello():
+        print("Hello!")
+    
+    say_hello()
+    # Output:
+    # Before function call
+    # Hello!
+    # After function call</code></pre>
+    
+                <p>The <code>@my_decorator</code> syntax is equivalent to:</p>
+    
+                <pre><code>def say_hello():
+        print("Hello!")
+    
+    say_hello = my_decorator(say_hello)</code></pre>
+    
+                <h3>Decorators with Arguments</h3>
+    
+                <pre><code>def repeat(times):
+        def decorator(func):
+            def wrapper(*args, **kwargs):
+                for _ in range(times):
+                    result = func(*args, **kwargs)
+                return result
+            return wrapper
+        return decorator
+    
+    @repeat(times=3)
+    def greet(name):
+        print(f"Hello, {name}!")
+    
+    greet("Alice")
+    # Hello, Alice!
+    # Hello, Alice!
+    # Hello, Alice!</code></pre>
+    
+                <h3>Practical Decorator Examples</h3>
+    
+                <pre><code>import time
+    from functools import wraps
+    
+    # Timing decorator
+    def timer(func):
+        @wraps(func)  # Preserves original function's metadata
+        def wrapper(*args, **kwargs):
+            start = time.time()
+            result = func(*args, **kwargs)
+            end = time.time()
+            print(f"{func.__name__} took {end - start:.4f} seconds")
+            return result
+        return wrapper
+    
+    @timer
+    def slow_function():
+        time.sleep(2)
+        return "Done"
+    
+    # Caching decorator
+    def cache(func):
+        cached_results = {}
+        
+        @wraps(func)
+        def wrapper(*args):
+            if args in cached_results:
+                print("Using cached result")
+                return cached_results[args]
+            result = func(*args)
+            cached_results[args] = result
+            return result
+        return wrapper
+    
+    @cache
+    def fibonacci(n):
+        if n < 2:
+            return n
+        return fibonacci(n-1) + fibonacci(n-2)</code></pre>
+    
+                <h3>Class-based Decorators</h3>
+    
+                <pre><code>class CountCalls:
+        def __init__(self, func):
+            self.func = func
+            self.count = 0
+        
+        def __call__(self, *args, **kwargs):
+            self.count += 1
+            print(f"Call {self.count} to {self.func.__name__}")
+            return self.func(*args, **kwargs)
+    
+    @CountCalls
+    def say_hello():
+        print("Hello!")
+    
+    say_hello()  # Call 1 to say_hello
+    say_hello()  # Call 2 to say_hello</code></pre>
+    
+                <h2>Python Generators and Iterators</h2>
+    
+                <p>Generators produce values on the-fly instead of storing them in memory. They're perfect for working with
+                    large datasets or infinite sequences.</p>
+    
+                <h3>Creating Generators</h3>
+    
+                <pre><code># Generator function (uses yield instead of return)
+    def count_up_to(n):
+        count = 1
+        while count <= n:
+            yield count
+            count += 1
+    
+    # Using the generator
+    for num in count_up_to(5):
+        print(num)  # 1, 2, 3, 4, 5
+    
+    # Generator is exhausted after one iteration
+    counter = count_up_to(3)
+    print(list(counter))  # [1, 2, 3]
+    print(list(counter))  # [] - empty, already consumed</code></pre>
+    
+                <h3>Generator Expressions</h3>
+    
+                <pre><code># List comprehension (creates entire list in memory)
+    squares_list = [x**2 for x in range(1000000)]  # Takes lots of memory!
+    
+    # Generator expression (creates values on demand)
+    squares_gen = (x**2 for x in range(1000000))  # Very memory efficient
+    
+    # Using generator
+    for square in squares_gen:
+        if square > 100:
+            break
+        print(square)</code></pre>
+    
+                <h3>Practical Generator Examples</h3>
+    
+                <pre><code># Reading large files efficiently
+    def read_large_file(file_path):
+        with open(file_path, 'r') as file:
+            for line in file:
+                yield line.strip()
+    
+    # Process one line at a time (memory efficient)
+    for line in read_large_file('huge_file.txt'):
+        process(line)
+    
+    # Infinite sequence generator
+    def fibonacci():
+        a, b = 0, 1
+        while True:
+            yield a
+            a, b = b, a + b
+    
+    # Generate first 10 Fibonacci numbers
+    fib = fibonacci()
+    for _ in range(10):
+        print(next(fib))</code></pre>
+    
+                <h3>Creating Custom Iterators</h3>
+    
+                <pre><code>class Countdown:
+        def __init__(self, start):
+            self.current = start
+        
+        def __iter__(self):
+            return self
+        
+        def __next__(self):
+            if self.current <= 0:
+                raise StopIteration
+            self.current -= 1
+            return self.current + 1
+    
+    for num in Countdown(5):
+        print(num)  # 5, 4, 3, 2, 1</code></pre>
+    
+                <h2>Python Context Managers</h2>
+    
+                <p>Context managers handle resource management automatically perfect for files, database connections, and
+                    locks. The <code>with</code> statement ensures cleanup happens even if errors occur.</p>
+    
+                <h3>Creating Context Managers</h3>
+    
+                <pre><code># Using class
+    class FileHandler:
+        def __init__(self, filename, mode):
+            self.filename = filename
+            self.mode = mode
+            self.file = None
+        
+        def __enter__(self):
+            self.file = open(self.filename, self.mode)
+            return self.file
+        
+        def __exit__(self, exc_type, exc_val, exc_tb):
+            if self.file:
+                self.file.close()
+            # Return False to propagate exceptions
+            return False
+    
+    with FileHandler('data.txt', 'w') as file:
+        file.write("Hello, World!")
+    # File automatically closed when leaving 'with' block</code></pre>
+    
+                <h3>Using contextlib</h3>
+    
+                <pre><code>from contextlib import contextmanager
+    
+    @contextmanager
+    def timer():
+        import time
+        start = time.time()
+        try:
+            yield
+        finally:
+            end = time.time()
+            print(f"Elapsed time: {end - start:.4f} seconds")
+    
+    with timer():
+        # Code to time
+        sum([i**2 for i in range(1000000)])</code></pre>
+    
+                <h2>Python Multithreading vs Multiprocessing</h2>
+    
+                <p>Python offers two approaches for concurrent execution: threads for I/O-bound tasks and processes for
+                    CPU-bound tasks.</p>
+    
+                <h3>Threading (I/O-Bound Tasks)</h3>
+    
+                <pre><code>import threading
+    import time
+    
+    def download_file(file_id):
+        print(f"Starting download {file_id}")
+        time.sleep(2)  # Simulate I/O operation
+        print(f"Finished download {file_id}")
+    
+    # Sequential (slow)
+    start = time.time()
+    for i in range(5):
+        download_file(i)
+    print(f"Sequential: {time.time() - start:.2f}s")  # ~10 seconds
+    
+    # Concurrent with threads (fast)
+    start = time.time()
+    threads = []
+    for i in range(5):
+        thread = threading.Thread(target=download_file, args=(i,))
+        threads.append(thread)
+        thread.start()
+    
+    for thread in threads:
+        thread.join()  # Wait for all threads to complete
+    print(f"Threaded: {time.time() - start:.2f}s")  # ~2 seconds</code></pre>
+    
+                <h3>Multiprocessing (CPU-Bound Tasks)</h3>
+    
+                <pre><code>from multiprocessing import Pool
+    import time
+    
+    def cpu_intensive_task(n):
+        """Simulate CPU-intensive work"""
+        count = 0
+        for i in range(n):
+            count += i ** 2
+        return count
+    
+    # Sequential
+    start = time.time()
+    results = [cpu_intensive_task(10000000) for _ in range(4)]
+    print(f"Sequential: {time.time() - start:.2f}s")
+    
+    # Parallel with multiprocessing
+    start = time.time()
+    with Pool(processes=4) as pool:
+        results = pool.map(cpu_intensive_task, [10000000] * 4)
+    print(f"Parallel: {time.time() - start:.2f}s")</code></pre>
+    
+                <div class="info-box">
+                    <strong>Thread vs Process:</strong><br>
+                    - <strong>Threads:</strong> Share memory, lightweight, good for I/O (network, files)<br>
+                    - <strong>Processes:</strong> Separate memory, heavier, good for CPU-intensive tasks<br>
+                    - Python's GIL limits thread performance for CPU tasks
+                </div>
+    
+                <h2>Asynchronous Python (async / await)</h2>
+    
+                <p>Async programming lets you write concurrent code that handles many operations without blocking. It's
+                    perfect for web servers, APIs, and I/O-heavy applications.</p>
+    
+                <h3>Basic Async/Await</h3>
+    
+                <pre><code>import asyncio
+    
+    async def fetch_data(id):
+        print(f"Fetching {id}...")
+        await asyncio.sleep(2)  # Simulate async I/O
+        print(f"Done {id}")
+        return f"Data {id}"
+    
+    async def main():
+        # Run tasks concurrently
+        results = await asyncio.gather(
+            fetch_data(1),
+            fetch_data(2),
+            fetch_data(3)
+        )
+        print(results)
+    
+    # Run async code
+    asyncio.run(main())  # Takes ~2 seconds, not 6!</code></pre>
+    
+                <h3>Async HTTP Requests</h3>
+    
+                <pre><code>import aiohttp
+    import asyncio
+    
+    async def fetch_url(session, url):
+        async with session.get(url) as response:
+            return await response.text()
+    
+    async def fetch_multiple_urls():
+        urls = [
+            'https://api.github.com/users/python',
+            'https://api.github.com/users/google',
+            'https://api.github.com/users/microsoft'
+        ]
+        
+        async with aiohttp.ClientSession() as session:
+            tasks = [fetch_url(session, url) for url in urls]
+            results = await asyncio.gather(*tasks)
+            return results
+    
+    results = asyncio.run(fetch_multiple_urls())</code></pre>
+    
+                <h2>Python Performance Optimization</h2>
+    
+                <p>Writing fast Python code requires understanding bottlenecks and choosing the right tools. Here are proven
+                    optimization techniques.</p>
+    
+                <h3>Use Built in Functions and Libraries</h3>
+    
+                <pre><code># Slow: Manual implementation
+    def sum_squares_slow(numbers):
+        total = 0
+        for num in numbers:
+            total += num ** 2
+        return total
+    
+    # Fast: Built-in functions
+    def sum_squares_fast(numbers):
+        return sum(num ** 2 for num in numbers)
+    
+    # Even faster: NumPy for large datasets
+    import numpy as np
+    def sum_squares_numpy(numbers):
+        arr = np.array(numbers)
+        return np.sum(arr ** 2)</code></pre>
+    
+                <h3>List Comprehensions vs Loops</h3>
+    
+                <pre><code>import time
+    
+    numbers = range(1000000)
+    
+    # Slower: append in loop
+    start = time.time()
+    result = []
+    for num in numbers:
+        result.append(num ** 2)
+    print(f"Loop: {time.time() - start:.4f}s")
+    
+    # Faster: list comprehension
+    start = time.time()
+    result = [num ** 2 for num in numbers]
+    print(f"Comprehension: {time.time() - start:.4f}s")</code></pre>
+    
+                <h3>Avoid Repeated Calculations</h3>
+    
+                <pre><code># Slow: repeated calculation
+    def slow_function(items):
+        for item in items:
+            if item in expensive_calculation():  # Called every iteration!
+                process(item)
+    
+    # Fast: calculate once
+    def fast_function(items):
+        valid_items = expensive_calculation()  # Called once
+        for item in items:
+            if item in valid_items:
+                process(item)</code></pre>
+    
+                <h3>Use Local Variables</h3>
+    
+                <pre><code># Slower: global lookup
+    import math
+    
+    def calculate():
+        result = 0
+        for i in range(1000000):
+            result += math.sqrt(i)  # Looks up 'math' globally each time
+    
+    # Faster: local variable
+    def calculate_fast():
+        result = 0
+        sqrt = math.sqrt  # Local reference
+        for i in range(1000000):
+            result += sqrt(i)</code></pre>
+    
+                <h2>Python Memory Management</h2>
+    
+                <p>Understanding how Python manages memory helps you write more efficient code and avoid memory leaks.</p>
+    
+                <h3>Reference Counting</h3>
+    
+                <pre><code>import sys
+    
+    x = []  # Creates list, reference count = 1
+    y = x   # Same object, reference count = 2
+    
+    print(sys.getrefcount(x))  # Shows reference count
+    
+    del y   # Decreases reference count
+    # When reference count reaches 0, object is freed</code></pre>
+    
+                <h3>Garbage Collection</h3>
+    
+                <pre><code>import gc
+    
+    # Check garbage collection status
+    print(gc.isenabled())  # True
+    
+    # Manual garbage collection
+    gc.collect()  # Force collection
+    
+    # View garbage collection stats
+    print(gc.get_stats())</code></pre>
+    
+                <h3>Memory Efficient Data Structures</h3>
+    
+                <pre><code># Generators instead of lists for large sequences
+    def large_range(n):
+        for i in range(n):
+            yield i
+    
+    # Use __slots__ to reduce memory in classes
+    class Point:
+        __slots__ = ['x', 'y']  # No __dict__, less memory
+        
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+    
+    # Tuples use less memory than lists
+    import sys
+    print(sys.getsizeof([1, 2, 3]))  # More bytes
+    print(sys.getsizeof((1, 2, 3)))  # Fewer bytes</code></pre>
+    
+                <h2>Python Security Best Practices</h2>
+    
+                <p>Security vulnerabilities can expose your users and systems to attacks. Follow these practices to write
+                    secure Python code.</p>
+    
+                <h3>Never Use eval() with User Input</h3>
+    
+                <pre><code># DANGEROUS - arbitrary code execution
+    user_input = input("Enter expression: ")
+    result = eval(user_input)  # User could enter: __import__('os').system('rm -rf /')
+    
+    # SAFE - use ast.literal_eval for data
+    import ast
+    user_input = "[1, 2, 3]"
+    result = ast.literal_eval(user_input)  # Only evaluates literals</code></pre>
+    
+                <h3>SQL Injection Prevention</h3>
+    
+                <pre><code>import sqlite3
+    
+    # DANGEROUS - SQL injection vulnerable
+    username = input("Username: ")
+    query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)  # User could enter: admin' OR '1'='1
+    
+    # SAFE - parameterized queries
+    username = input("Username: ")
+    query = "SELECT * FROM users WHERE username = ?"
+    cursor.execute(query, (username,))</code></pre>
+    
+                <h3>Secure Password Storage</h3>
+    
+                <pre><code>import hashlib
+    import os
+    
+    # NEVER store plain text passwords!
+    # BAD: password = "user_password"
+    
+    # GOOD: Hash with salt
+    def hash_password(password):
+        salt = os.urandom(32)  # Random salt
+        key = hashlib.pbkdf2_hmac(
+            'sha256',
+            password.encode('utf-8'),
+            salt,
+            100000  # Iterations
+        )
+        return salt + key
+    
+    def verify_password(stored_password, provided_password):
+        salt = stored_password[:32]
+        stored_key = stored_password[32:]
+        new_key = hashlib.pbkdf2_hmac(
+            'sha256',
+            provided_password.encode('utf-8'),
+            salt,
+            100000
+        )
+        return new_key == stored_key</code></pre>
+    
+                <h3>Input Validation</h3>
+    
+                <pre><code>import re
+    
+    def validate_email(email):
+        pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+        return re.match(pattern, email) is not None
+    
+    def validate_age(age):
+        try:
+            age_int = int(age)
+            return 0 <= age_int <= 150
+        except ValueError:
+            return False
+    
+    # Always validate and sanitize user input
+    email = input("Email: ")
+    if not validate_email(email):
+        print("Invalid email format")</code></pre>
+    
+                <h2>Writing Clean & Maintainable Python Code</h2>
+    
+                <p>Clean code is easier to read, debug, and maintain. Follow these principles to write professional Python.
+                </p>
+    
+                <h3>PEP 8 Style Guide</h3>
+    
+                <pre><code># Good naming
+    user_name = "Alice"  # snake_case for variables
+    MAX_SIZE = 100       # UPPERCASE for constants
+    
+    class UserAccount:   # PascalCase for classes
+        pass
+    
+    def calculate_total():  # snake_case for functions
+        pass
+    
+    # Good spacing
+    def function_name(param1, param2):
+        result = param1 + param2  # Spaces around operators
+        return result
+    
+    # Line length: max 79 characters
+    long_string = (
+        "This is a very long string that needs to be "
+        "split across multiple lines for readability"
+    )</code></pre>
+    
+                <h3>Meaningful Names</h3>
+    
+                <pre><code># Bad: cryptic names
+    d = {}
+    t = 0
+    for x in lst:
+        t += x
+    
+    # Good: descriptive names
+    user_scores = {}
+    total_score = 0
+    for score in score_list:
+        total_score += score</code></pre>
+    
+                <h3>DRY Principle (Don't Repeat Yourself)</h3>
+    
+                <pre><code># Bad: repeated code
+    user1_total = user1_price * user1_quantity
+    user2_total = user2_price * user2_quantity
+    user3_total = user3_price * user3_quantity
+    
+    # Good: function for repeated logic
+    def calculate_total(price, quantity):
+        return price * quantity
+    
+    user1_total = calculate_total(user1_price, user1_quantity)
+    user2_total = calculate_total(user2_price, user2_quantity)
+    user3_total = calculate_total(user3_price, user3_quantity)</code></pre>
+    
+                <h3>Documentation</h3>
+    
+                <pre><code>def calculate_compound_interest(principal, rate, time, compounds_per_year):
+        """
+        Calculate compound interest.
+        
+        Args:
+            principal (float): Initial investment amount
+            rate (float): Annual interest rate (as decimal, e.g., 0.05 for 5%)
+            time (int): Time period in years
+            compounds_per_year (int): Number of times interest compounds per year
+        
+        Returns:
+            float: Final amount after compound interest
+        
+        Example:
+            >>> calculate_compound_interest(1000, 0.05, 10, 4)
+            1643.62
+        """
+        amount = principal * (1 + rate / compounds_per_year) ** (compounds_per_year * time)
+        return round(amount, 2)</code></pre>
+    
+                <h2>Common Python Bugs and How to Fix Them</h2>
+    
+                <h3>Bug #1: Mutable Default Arguments</h3>
+    
+                <pre><code># Bug
+    def add_item(item, items=[]):
+        items.append(item)
+        return items
+    
+    print(add_item(1))  # [1]
+    print(add_item(2))  # [1, 2] - UNEXPECTED!
+    
+    # Fix
+    def add_item(item, items=None):
+        if items is None:
+            items = []
+        items.append(item)
+        return items</code></pre>
+    
+                <h3>Bug #2: Late Binding Closures</h3>
+    
+                <pre><code># Bug
+    functions = []
+    for i in range(3):
+        functions.append(lambda: i)
+    
+    for f in functions:
+        print(f())  # All print 2!
+    
+    # Fix
+    functions = []
+    for i in range(3):
+        functions.append(lambda i=i: i)
+    
+    for f in functions:
+        print(f())  # Prints 0, 1, 2</code></pre>
+    
+                <h3>Bug #3: Modifying List During Iteration</h3>
+    
+                <pre><code># Bug
+    numbers = [1, 2, 3, 4, 5]
+    for num in numbers:
+        if num % 2 == 0:
+            numbers.remove(num)  # Skips elements!
+    
+    # Fix
+    numbers = [1, 2, 3, 4, 5]
+    numbers = [num for num in numbers if num % 2 != 0]</code></pre>
+    
+                <h2>Building Real-World Python Projects</h2>
+    
+                <p>Let's build a complete command line todo application that demonstrates everything you've learned:</p>
+    
+                <pre><code>import json
+    from datetime import datetime
+    from pathlib import Path
+    
+    class TodoApp:
+        def __init__(self, filename='todos.json'):
+            self.filename = filename
+            self.tasks = self.load_tasks()
+        
+        def load_tasks(self):
+            path = Path(self.filename)
+            if path.exists():
+                with open(path, 'r') as f:
+                    return json.load(f)
+            return []
+        
+        def save_tasks(self):
+            with open(self.filename, 'w') as f:
+                json.dump(self.tasks, f, indent=4)
+        
+        def add_task(self, description, priority='medium'):
+            task = {
+                'id': len(self.tasks) + 1,
+                'description': description,
+                'priority': priority,
+                'completed': False,
+                'created': datetime.now().isoformat()
+            }
+            self.tasks.append(task)
+            self.save_tasks()
+            print(f"✓ Task added: {description}")
+        
+        def complete_task(self, task_id):
+            for task in self.tasks:
+                if task['id'] == task_id:
+                    task['completed'] = True
+                    self.save_tasks()
+                    print(f"✓ Task completed: {task['description']}")
+                    return
+            print("Task not found")
+        
+        def list_tasks(self, show_completed=False):
+            if not self.tasks:
+                print("No tasks yet!")
+                return
+            
+            print("\n=== Your Tasks ===")
+            for task in self.tasks:
+                if task['completed'] and not show_completed:
+                    continue
+                
+                status = "✓" if task['completed'] else " "
+                priority_icon = {
+                    'high': '🔴',
+                    'medium': '🟡',
+                    'low': '🟢'
+                }.get(task['priority'], '⚪')
+                
+                print(f"[{status}] {task['id']}. {priority_icon} {task['description']}")
+        
+        def delete_task(self, task_id):
+            self.tasks = [t for t in self.tasks if t['id'] != task_id]
+            self.save_tasks()
+            print(f"✓ Task deleted")
+    
+    def main():
+        app = TodoApp()
+        
+        while True:
+            print("\n=== Todo App ===")
+            print("1. Add task")
+            print("2. List tasks")
+            print("3. Complete task")
+            print("4. Delete task")
+            print("5. Exit")
+            
+            choice = input("\nChoice: ").strip()
+            
+            if choice == '1':
+                desc = input("Task description: ")
+                priority = input("Priority (high/medium/low): ").lower() or 'medium'
+                app.add_task(desc, priority)
+            
+            elif choice == '2':
+                show_all = input("Show completed? (y/n): ").lower() == 'y'
+                app.list_tasks(show_all)
+            
+            elif choice == '3':
+                app.list_tasks()
+                task_id = int(input("Task ID to complete: "))
+                app.complete_task(task_id)
+            
+            elif choice == '4':
+                app.list_tasks()
+                task_id = int(input("Task ID to delete: "))
+                app.delete_task(task_id)
+            
+            elif choice == '5':
+                print("Goodbye!")
+                break
+    
+    if __name__ == '__main__':
+        main()</code></pre>
+    
+                <div class="info-box">
+                    <h3>🎯 Project Ideas to Build Your Skills</h3>
+                    <ol>
+                        <li><strong>Password Manager</strong> - Practice file I/O, encryption, OOP</li>
+                        <li><strong>Web Scraper</strong> - Learn requests, BeautifulSoup, data processing</li>
+                        <li><strong>API Wrapper</strong> - Practice async programming, error handling</li>
+                        <li><strong>CLI Tool</strong> - Master argparse, file operations, user interaction</li>
+                        <li><strong>Data Analyzer</strong> - Work with pandas, visualization, statistics</li>
+                        <li><strong>Chat Bot</strong> - Combine NLP libraries, OOP, external APIs</li>
+                        <li><strong>Automation Script</strong> - File management, scheduled tasks, notifications</li>
+                    </ol>
+                </div>
+    
+                <h2>Your Python Journey: Next Steps</h2>
+    
+                <p>Congratulations! You've completed a comprehensive Python course covering beginner, intermediate, and
+                    advanced topics. You now understand:</p>
+    
+                <ul>
+                    <li>Python fundamentals: variables, data types, control flow</li>
+                    <li>Functions, modules, and code organization</li>
+                    <li>Object-oriented programming and design patterns</li>
+                    <li>File handling, APIs, and data processing</li>
+                    <li>Advanced concepts: decorators, generators, async programming</li>
+                    <li>Performance optimization and memory management</li>
+                    <li>Security best practices and clean code principles</li>
+                    <li>Debugging strategies and common pitfalls</li>
+                </ul>
+    
+                <h3>Continue Learning</h3>
+    
+                <p><strong>Frameworks to Explore:</strong></p>
+                <ul>
+                    <li><strong>Django/Flask</strong> - Web development</li>
+                    <li><strong>FastAPI</strong> - Modern APIs</li>
+                    <li><strong>Pandas/NumPy</strong> - Data science</li>
+                    <li><strong>Pytest</strong> - Testing</li>
+                    <li><strong>SQLAlchemy</strong> - Databases</li>
+                </ul>
+    
+                <p><strong>Learning Resources:</strong></p>
+                <ul>
+                    <li>Official Python documentation (docs.python.org)</li>
+                    <li>Real Python tutorials</li>
+                    <li>Python Package Index (PyPI.org)</li>
+                    <li>GitHub open source projects</li>
+                    <li>Stack Overflow for problem-solving</li>
+                </ul>
+    
+                <h3>The Path Forward</h3>
+    
+                <p>The best way to master Python is to build real projects. Don't just read code. Make mistakes. Debug them.
+                    Read other people's code. Contribute to open source. Each line you write makes you a better developer.
+                </p>
+    
+                <p>Remember: every expert was once a beginner. The Python community is welcoming and helpful. Don't be
+                    afraid to ask questions, share your work, and help others when you can.</p>
+    
+                <div class="tip-box">
+                    <h3>Final Advice from a Senior Developer</h3>
+                    <p><strong>Write code every day.</strong> Even 30 minutes of consistent practice beats occasional
+                        marathon sessions. Build small projects that solve real problems in your life. Automate boring
+                        tasks. Create tools you'll actually use.</p>
+    
+                    <p><strong>Read code</strong> as much as you write it. Study popular open source projects. See how
+                        experienced developers structure their code, handle errors, and write documentation.</p>
+    
+                    <p><strong>Embrace debugging.</strong> Errors aren't failures they're learning opportunities. Each bug
+                        you fix teaches you something new about how Python works.</p>
+    
+                    <p><strong>Stay curious.</strong> Python is constantly evolving. New libraries, tools, and best
+                        practices emerge regularly. Keep learning, keep experimenting, and most importantly keep coding.</p>
+                </div>
+    
+                <p
+                    style="margin-top: 40px; padding: 25px; 
+background: linear-gradient(135deg, #0f9b0f 0%, #064e3b 100%); 
+color: white; border-radius: 8px; text-align: center; font-size: 1.1em;"
+
+                    <strong>🐍 You're now a Python developer!</strong><br><br>
+                    You have the knowledge. You have the tools. Now go build something amazing.<br>
+                    The Python community welcomes you. Happy coding! 🚀
+                </p>
+    
+            </article>
+    
+            <footer>
+                <p>&copy; 2026 TechTrenches | Professional Python Tutorials</p>
+                <p style="margin-top: 10px; font-size: 0.9em;">From Zero to Python Hero - Complete Course</p>
+            </footer>
+        </div>
+    
+    
+    
+
+
+
+
+
+
+
+
+</body>
+
+</html>
