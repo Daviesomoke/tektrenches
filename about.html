@@ -76,6 +76,50 @@
 
 
 
+
+    
+    <div id="cookie-notice" style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1f2937;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 9999;
+    display: none;
+    ">
+        <span>
+            We use cookies to improve your experience and to display relevant advertisements.
+            By using this website, you agree to our
+            <a href="/privacy.html" style="color: #38bdf8; text-decoration: underline;">Privacy Policy</a>.
+        </span>
+        <button onclick="acceptCookies()" style="
+        margin-left: 15px;
+        padding: 8px 14px;
+        background: #22c55e;
+        color: #000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      ">
+            Accept
+        </button>
+    </div>
+    <script>
+        function acceptCookies() {
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-notice").style.display = "none";
+        }
+        if (!localStorage.getItem("cookiesAccepted")) {
+            document.getElementById("cookie-notice").style.display = "block";
+        }
+    </script>
+
+
+
     
 
 
